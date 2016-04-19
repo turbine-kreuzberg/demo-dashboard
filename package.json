@@ -1,8 +1,8 @@
 {
   "name": "vtm-dashboard",
-  "description": "vtm-dashboard",
-  "author": "<Put your name here>",
-  "version": "0.0.1",
+  "description": "A project dashboard for VOTUM",
+  "author": "matthias.gronwald@votum.de",
+  "version": "0.1.0",
   "private": true,
   "dependencies": {
     "dashing-js": "~0.1.5"
