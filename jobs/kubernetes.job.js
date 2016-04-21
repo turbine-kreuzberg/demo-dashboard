@@ -5,29 +5,21 @@ var Client = require('node-kubernetes-client');
 var K8s = require('k8s');
 
 var client = new Client({
-    host:  '172.17.8.101',
+    host:  'https://10.16.0.1:443',
     protocol: 'http',
     version: 'v1',
     token: 'XYZ'
 });
 
-var kubeapi = K8s.api({
-    endpoint: 'http://10.16.0.1:8080'
-    , version: 'v1'
-});
-
 setInterval(function() {
 
     client.pods.get(function (err, pods) {
-        console.log('podsss:', pods);
+        var m = pods
+        console.log('podsss:', m);
         console.log('err client: ', err);
-        //send_event('welcome', { text: 'pods' });
+        send_event('welcome', { text: m });
     });
-    kubeapi.get('/namespaces/default/services/kubernetes', function(err, data){
-        console.log('data:', data);
-        console.log('err api: ', err);
-        send_event('welcome', { text: data });
-    });
+
 
     //send_event('welcome', { text: 'test' });
 
