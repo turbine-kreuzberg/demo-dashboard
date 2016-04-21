@@ -31,7 +31,7 @@ setInterval(function() {
         nodesOnline = 0;
 
         for (var i=0; i < nodeItemsArray.length; i++) {
-            console.log(nodeItemsArray[i].metadata.name + ':', nodeItemsArray[i].status.conditions[1]);
+            // console.log(nodeItemsArray[i].metadata.name + ':', nodeItemsArray[i].status.conditions[1]);
 
             var nodeName = nodeItemsArray[i].metadata.name;
             var nodeStatus = nodeItemsArray[i].status.conditions[1].status;
@@ -48,7 +48,7 @@ setInterval(function() {
 
             send_event('health-' + nodeName, { criticals: criticalNum, warnings: warningNum });
         }
-        console.log('==============', j);
+        // console.log('==============', j);
     });
 
     j++;
