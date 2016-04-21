@@ -28,14 +28,20 @@ block content
       li(data-row='1', data-col='1', data-sizex='1', data-sizey='1')
         div(data-id='karma', data-view='Number', data-title='Karma', style='background-color:#96bf48;')
         i.fa.fa-heart.icon-background
-      li(data-row='1', data-col='1', data-sizex='2', data-sizey='2')
+      li(data-row='1', data-col='1', data-sizex='2', data-sizey='1')
         div(data-id='convergence', data-view='Graph', data-title='Convergence', style='background-color:#47bbb3;', data-moreinfo='poop')
-      li(data-row='3' data-col='2' data-sizex='1' data-sizey='1')
-        div(data-id='health-stage' data-view='Health' data-title='Stage health')
-        i.fa.fa-lock.icon-background
-      li(data-row='3' data-col='3' data-sizex='1' data-sizey='1')
-        div(data-id='health-prod' data-view='Health' data-title='Production health')
-        i.fa.fa-globe.icon-background
+      li(data-row='1' data-col='1' data-sizex='1' data-sizey='1')
+        div(data-id='health-coreos001' data-view='Health' data-title='coreos001 health')
+        i.fa.fa-gear.icon-background
+      li(data-row='1' data-col='1' data-sizex='1' data-sizey='1')
+        div(data-id='health-coreos002' data-view='Health' data-title='coreos002 health')
+        i.fa.fa-gear.icon-background
+      li(data-row='1' data-col='1' data-sizex='1' data-sizey='1')
+        div(data-id='health-coreos003' data-view='Health' data-title='coreos003 health')
+        i.fa.fa-gear.icon-background
+      li(data-row='1' data-col='1' data-sizex='1' data-sizey='1')
+        div(data-id='health-coreos004' data-view='Health' data-title='coreos004 health')
+        i.fa.fa-gear.icon-background
     //center
     //  div(style='font-size: 12px') Try this: curl -d '{ "auth_token": "YOUR_AUTH_TOKEN", "text": "Hey, Look what I can do!" }' -H "Content-Type: application/json" http://#{request.header('host')}/widgets/welcome
 
@@ -43,7 +49,7 @@ block scripts
   script.
     $(function() {
       // These settings override the defaults set in application.coffee. You can do this on a per dashboard basis.
-      Dashing.gridsterLayout('[{"col":2,"row":1,"size_x":1,"size_y":1},{"col":1,"row":1,"size_x":1,"size_y":1},{"col":3,"row":1,"size_x":1,"size_y":1},{"col":4,"row":1,"size_x":1,"size_y":1},{"col":3,"row":2,"size_x":1,"size_y":1},{"col":2,"row":2,"size_x":1,"size_y":1},{"col":1,"row":2,"size_x":1,"size_y":2},{"col":5,"row":1,"size_x":1,"size_y":1},{"col":4,"row":2,"size_x":2,"size_y":2},{"col":2,"row":3,"size_x":1,"size_y":1},{"col":3,"row":3,"size_x":1,"size_y":1}]')
+      Dashing.gridsterLayout('[{"col":2,"row":1,"size_x":1,"size_y":1},{"col":1,"row":1,"size_x":1,"size_y":1},{"col":3,"row":1,"size_x":1,"size_y":1},{"col":4,"row":1,"size_x":1,"size_y":1},{"col":3,"row":2,"size_x":1,"size_y":1},{"col":2,"row":2,"size_x":1,"size_y":1},{"col":1,"row":2,"size_x":1,"size_y":2},{"col":5,"row":1,"size_x":1,"size_y":1},{"col":4,"row":2,"size_x":2,"size_y":2},{"col":2,"row":3,"size_x":1,"size_y":1},{"col":3,"row":3,"size_x":1,"size_y":1},{"col":4,"row":3,"size_x":1,"size_y":1},{"col":5,"row":3,"size_x":1,"size_y":1}]')
       Dashing.widget_base_dimensions = [370, 340]
       Dashing.numColumns = 5
     });
