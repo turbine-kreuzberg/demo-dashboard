@@ -10,7 +10,9 @@
     "cron": "~1.1.0",
     "moment": "~2.13.0",
     "request": "~2.72.0",
-    "memory-cache": "~0.1.5"
+    "memory-cache": "~0.1.5",
+    "k8s": "0.2.0",
+    "node-kubernetes-client": "0.2.3"
   },
   "engine": "node >= 0.10"
 }
