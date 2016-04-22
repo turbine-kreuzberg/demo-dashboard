@@ -1,4 +1,4 @@
-var buzzwords = ['Paradigm shift', 'Leverage', 'Pivoting', 'Turn-key', 'Streamlininess', 'Exit strategy', 'Synergy', 'Enterprise', 'Web 2.0'];
+var buzzwords = ['Paradigm shift', 'Streamlininess', 'Exit strategy', 'Synergy', 'Enterprise', 'Web 2.0', '#yolo', 'Cyber space', 'Lean', 'Agile', 'SCRUM', 'Kanban'];
 var buzzword_counts = {};
 
 setInterval(function() {
