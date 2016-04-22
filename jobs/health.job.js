@@ -49,6 +49,13 @@ function getCheckIpPromise(ip, name) {
     });
 }
 
+var map = {
+    "coreos001.matrix.votum.io": "health-core-01",
+    "coreos002.matrix.votum.io": "health-core-02",
+    "coreos003.matrix.votum.io": "health-core-03",
+    "coreos004.matrix.votum.io": "health-core-04"
+}
+
 setInterval(function () {
 
     client.nodes.get(function (err, nodes) {
@@ -85,8 +92,7 @@ setInterval(function () {
                             atLeastOneOnline = true;
                         }
                     }
-
-                    send_event('health-' + results[0].name, {criticals: (atLeastOneOnline ? 0 : 1), warnings: 0});
+                    send_event(map[results[0].name], {criticals: (atLeastOneOnline ? 0 : 1), warnings: 0});
                 });
         }
     });
