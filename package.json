@@ -7,7 +7,7 @@
   "dependencies": {
     "dashing-js": "~0.1.5",
     "jenkins-api": "~0.2.8",
-    "cron": "~1.1.0",
+    "cron": "~1.8.0",
     "moment": "~2.13.0",
     "request": "~2.72.0",
     "memory-cache": "~0.1.5",
