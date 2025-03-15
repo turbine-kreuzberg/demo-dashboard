@@ -11,7 +11,7 @@
     "moment": "~2.13.0",
     "request": "~2.72.0",
     "memory-cache": "~0.1.5",
-    "node-kubernetes-client": "0.2.3",
+    "node-kubernetes-client": "0.3.2",
     "promise": "~7.1.1",
     "ping": "~0.1.10"
   },
